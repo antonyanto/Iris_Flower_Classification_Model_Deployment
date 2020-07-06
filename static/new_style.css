@@ -1,0 +1,56 @@
+#heading{
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: arial;
+  margin-left: 400px;
+  margin-top: 35px;
+  margin-bottom: 100px;
+}
+
+body{
+  background-image: url("image_original.jpg");
+  background-position: center;
+}
+
+input[type=number]{
+  padding: 12px 20px;
+  width: 35%;
+  border: 3px solid #555;
+  margin: 3px 0px;
+  background-color: #8c8c8c;
+  color: white;
+}
+
+button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 2px 0px;
+  cursor: pointer;
+}
+
+label{
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.input_form{
+  margin: 0px 400px;
+  color: white;
+  border-radius: 5px;
+  background-color: #262626;
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h3{
+  color: white;
+  font-size: 30px;
+  margin-left: 400px;
+  padding-left: 100px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Flower Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='new_style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  </head>
+  <body>
+    <h3 id="heading">Let's Predict this Flower</h3>
+      <form class="input_form" action={{ url_for('predict') }} method="POST">
+
+        <label for="sep-len">Sepal Length</label> <br>
+        <input type="number" id="sep-len" name="sepal-length" placeholder="1.00" step="0.1" autofocus required> <br>
+
+        <label for="sep-wid">Sepal Width</label> <br>
+        <input type="number" id="sep-wid" name="sepal-width" placeholder="1.00" step="0.1" required> <br>
+
+        <label for="pet-len">Petal Length</label> <br>
+        <input type="number" id="pet-len" name="petal-length" placeholder="1.00" step="0.1" required> <br>
+
+        <label for="pet-wid">Petal Width</label> <br>
+        <input type="number" id="pet-wid" name="petal-width" placeholder="1.00" step="0.1" required> <br> <br>
+
+        <button type="submit">Predict</button>
+      </form>
+      <h3>{{ predicted }}</h3>
+  </body>
+</html>
